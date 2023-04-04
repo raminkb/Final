@@ -53,9 +53,56 @@ namespace Final
             source.DataSource = this.listinfor ;
             this.dataGridView1.DataSource = source;
             this.DialogResult = DialogResult.OK;
+
+            this.textBox1.Text = this.textBox1.Text = "";
+            this.textBox2.Text = this.textBox2.Text = "";
+            this.textBox3.Text = this.textBox3.Text = "";
+            this.comboBox1.Text = this.comboBox1.Text = "";
+            this.comboBox2.Text = this.comboBox2.Text = "";
+            this.comboBox3.Text = this.comboBox3.Text = "";
         }
-       
+
+        private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "TEXT|*.txt|CSV|*.csv";
+            saveFileDialog.ShowDialog();
+            if (saveFileDialog.FileName != "")
+            {
+                using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                {
+                    foreach (ClassInfor item in listinfor)
+                    {
+                        writer.WriteLine(String.Format("{0},{1},{2},{3},{4},{5}",
+                            item.Name,
+                            item.Lastname,
+                            item.Id,
+                            item.Floor,
+                            item.Room,
+                            item.Bed));
+                    }
+                }
+            }
+            dataGridView1.DataSource = null;
+
         }
+
+        private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = openFileDialog1.FileName;
+                BindingSource source = new BindingSource();
+                source.DataSource = this.listinfor;
+                this.dataGridView1.DataSource = source;
+                this.DialogResult = DialogResult.OK;
+            }
+
+
+        }
+    }
     }
         
        

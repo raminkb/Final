@@ -3,22 +3,29 @@
   <Class Name="Final.FormInformation" Collapsed="true">
     <Position X="1" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAAAACABABAQAACAACBCAAiYBwAAECAAAABAAAA=</HashCode>
+      <HashCode>BSAQAAAAACAAABEQAACAACJCCAqYBwAAECAAAABAAAA=</HashCode>
       <FileName>FormInformation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Final.Feil.ClassStudent" Collapsed="true">
-    <Position X="1" Y="1.75" Width="1.5" />
+    <Position X="0.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAgAAAgKABAIAgQQAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Feil\ClassStudent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Final.Feil.ClassInfor" Collapsed="true">
-    <Position X="1" Y="2.75" Width="1.5" />
+    <Position X="2.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAIAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAgKABAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Feil\ClassInfor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final.Feil.ClassPerson" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Feil\ClassPerson.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
